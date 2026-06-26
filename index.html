@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Meu Blog 📝</h1>
+    <p>Ideias, experiências e descobertas.</p>
+    <button id="btnTema">🌙 Modo escuro</button>
+  </header>
+
+  <main>
+    <article>
+      <h2>Meu primeiro post</h2>
+      <p class="data">📅 Janeiro de 2026</p>
+      <img src="https://picsum.photos/600/300?random=1" alt="Imagem do post">
+      <p>
+        Esse é meu primeiro texto no blog. Aqui vou contar o que aprendi,
+        o que me interessa e o que quero explorar. Todo mundo começa do zero —
+        e esse é o meu começo.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Feito por mim 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+🔍 O que cada parte faz?
+<!DOCTYPE html>
+Avisa o navegador: "o que vem agora é HTML moderno". Sem isso o browser pode interpretar a página errado.
+<html lang="pt-BR">
+A tag que envolve tudo. O lang="pt-BR" avisa que o idioma é português — ajuda o corretor ortográfico do navegador.
+<head>
+Área de configurações que o usuário não vê na tela. É onde ficam o título da aba, o link pro CSS e outras instruções pro navegador.
+<meta charset>
+Define o "alfabeto" usado na página. Com UTF-8, acentos como ã, é, ç aparecem certinho.
+<meta viewport>
+Faz a página caber no celular. Sem isso, o site aparece minúsculo no smartphone.
+<link rel="stylesheet">
+Conecta o CSS ao HTML. É como dizer: "vai buscar o visual nesse arquivo aqui". O href é o nome do arquivo.
+<body>
+Tudo que aparece na tela fica aqui. Header, textos, imagens, botão — é dentro do body.
+<header>
+O topo da página. Fica o nome do blog, a descrição e o botão de tema. É como a capa de um caderno.
+<h1> e <h2>
+Títulos. h1 é o maior (nome do blog), h2 é menor (título do post). Quanto menor o número, maior e mais importante o título.
+<article>
+Diz pro navegador que aquele bloco é um conteúdo independente — no caso, um post do blog.
+<img src="...">
+Mostra uma imagem. O src é o endereço da foto. O alt é um texto que aparece se a imagem não carregar — e ajuda quem usa leitor de tela.
+<button id="btnTema">
+Um botão clicável. O id="btnTema" é um apelido único — o JavaScript vai usar esse apelido pra encontrar e controlar esse botão. Pensa no id como o nome da pessoa na chamada: tem que ser único!
+<script src="...">
+Conecta o JavaScript ao HTML. Fica no final do body de propósito: o HTML carrega primeiro, aí o JS entra em ação.
